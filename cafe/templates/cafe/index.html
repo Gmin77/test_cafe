@@ -1,0 +1,25 @@
+
+<h1>Index</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="category">카테고리 :</label>
+    <select name="category">
+      <option value="커피">커피</option>
+      <option value="음료">음료</option>
+      <option value="디저트">디저트</option>
+    </select>
+    <div>
+    <label for="menu">메뉴:</label>
+    <input type="text" name="menu">
+    </div>  
+    <div>
+    <label for="price">가격:</label>
+    <input type="text" name="price">
+    </div>
+    <div>
+    <label for="description">소개:</label>
+    <textarea name="description" rows="4" cols="50"></textarea>
+    </div>  
+    <input type="submit" value="입력">
+</form>
